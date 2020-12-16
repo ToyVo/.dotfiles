@@ -176,8 +176,8 @@ draw_bold_text_with_bright_colors: false
 colors:
   # Default colors
   primary:
-    background: '0x263238'
-    foreground: '0xeeffff'
+    background: '#263238'
+    foreground: '#eeffff'
 
     # Bright and dim foreground colors
     #
@@ -195,8 +195,8 @@ colors:
   # Allowed values are CellForeground and CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
   cursor:
-    text: '0x263238'
-    cursor: '0xeeffff'
+    text: '#263238'
+    cursor: '#eeffff'
 
   # Vi mode cursor colors
   #
@@ -237,25 +237,25 @@ colors:
 
   # Normal colors
   normal:
-    black:   '0x263238'
-    red:     '0xf07178'
-    green:   '0xc3e88d'
-    yellow:  '0xffcb6b'
-    blue:    '0x82aaff'
-    magenta: '0xc792ea'
-    cyan:    '0x89ddff'
-    white:   '0xeeffff'
+    black:   '#263238'
+    red:     '#f07178'
+    green:   '#c3e88d'
+    yellow:  '#ffcb6b'
+    blue:    '#82aaff'
+    magenta: '#c792ea'
+    cyan:    '#89ddff'
+    white:   '#eeffff'
 
   # Bright colors
   bright:
-    black:   '0x546e7a'
-    red:     '0xf78c6c'
-    green:   '0x2e3c43'
-    yellow:  '0x314549'
-    blue:    '0xb2ccd6'
-    magenta: '0xeeffff'
-    cyan:    '0xff5370'
-    white:   '0xffffff'
+    black:   '#546e7a'
+    red:     '#f78c6c'
+    green:   '#2e3c43'
+    yellow:  '#314549'
+    blue:    '#b2ccd6'
+    magenta: '#eeffff'
+    cyan:    '#ff5370'
+    white:   '#ffffff'
 
   # Dim colors
   #

@@ -19,9 +19,9 @@ unsetopt autocd beep extendedglob notify
 bindkey -v
 
 zstyle :compinstall filename '/home/toyvo/.zshrc'
+zstyle ':completion:*' matcher-list '' '+m:{a-zA-Z}={A-Za-z}' '+r:|[._-]=* r:|=*' '+l:|=* r:|=*'
 
-autoload -Uz compinit
-compinit
+autoload -Uz compinit && compinit
 
 # run neofetch at launch
 neofetch

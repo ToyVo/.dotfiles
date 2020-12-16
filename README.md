@@ -12,6 +12,9 @@ some software that my dotfiles use:
 * rofi
 * ttf-fira-code
 * zsh
+* materia-gtk-theme
+* i3-gaps
+* i3-blocks
 
 AUR packages that I like to use
 * paru-bin
