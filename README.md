@@ -20,4 +20,13 @@ AUR packages that I like to use
 * paru-bin
 * starship-bin
 
-to setup on a new install: clone to home directory, then run stow for each package to be used (stow * doesn't want to work with this README.md)
+to setup on a new install: clone to home directory, then run stow for each package to be used
+```sh
+stow -t ~ bash zsh
+```
+
+
+or for all
+```sh
+stow -t ~ */
+```

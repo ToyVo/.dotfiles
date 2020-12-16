@@ -14,7 +14,7 @@ alias ls='ls --color=auto'
 HISTFILE=$HOME/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
-setopt nomatch
+setopt nomatch globdots
 unsetopt autocd beep extendedglob notify
 bindkey -v
 
