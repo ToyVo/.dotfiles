@@ -13,8 +13,10 @@ some software that my dotfiles use:
 * ttf-fira-code
 * zsh
 * materia-gtk-theme
-* i3-gaps
+* i3
 * i3-blocks
+* feh
+* picom
 
 AUR packages that I like to use
 * paru-bin

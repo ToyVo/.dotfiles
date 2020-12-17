@@ -1,3 +1,18 @@
 [user]
 	name = Collin Diekvoss
 	email = cdiekvoss@gmail.com
+[pull]
+	rebase = true
+[alias]
+	a = add
+	aa = add -A
+	b = branch
+	ba = branch -a
+	c = commit -m
+	ca = commit -am
+	co = checkout
+	s = status -sb
+[core]
+	editor = nvim
+	eol = lf
+	autocrlf = input
