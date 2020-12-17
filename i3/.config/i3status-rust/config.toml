@@ -14,6 +14,12 @@ critical_fg = "#263238"
 
 [icons]
 name = "awesome5"
+[icons.overrides]
+backlight_empty = ""
+backlight_partial3 = ""
+backlight_partial2 = ""
+backlight_partial1 = ""
+backlight_full = ""
 
 [[block]]
 block = "disk_space"
