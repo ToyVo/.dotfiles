@@ -11,10 +11,11 @@ some software that my dotfiles use:
 * papirus-icon-theme
 * rofi
 * ttf-fira-code
+* ttf-font-awesome
 * zsh
 * materia-gtk-theme
 * i3
-* i3-blocks
+* i3status-rust
 * feh
 * picom
 

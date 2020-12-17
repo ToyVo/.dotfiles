@@ -11,7 +11,7 @@ export EDITOR=nvim
 # aliases
 alias ls='ls --color=auto'
 
-HISTFILE=$HOME/.histfile
+HISTFILE=$HOME/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 setopt nomatch globdots
