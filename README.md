@@ -25,11 +25,23 @@ AUR packages that I like to use
 
 to setup on a new install: clone to home directory, then run stow for each package to be used
 ```sh
-stow -t ~ bash zsh
+stow -t ~ user_bash user_zsh user_ETC
 ```
 
 
 or for all
 ```sh
-stow -t ~ */
+stow -t ~ user*
+```
+
+
+for system config files
+```sh
+sudo stow -t / system_pacman system_lightdm system_ETC
+```
+
+
+or for all
+```sh
+sudo stow -t / system*
 ```
