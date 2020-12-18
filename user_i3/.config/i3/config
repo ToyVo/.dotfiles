@@ -221,6 +221,6 @@ smart_borders on
 gaps inner 8
 gaps outer 2
 
-exec --no-startup-id feh --no-fehbg --bg-scale --no-xinerama $HOME/.dotfiles/backgrounds/.backgrounds/greyscale_firewatch_dual_1440p.png
+exec --no-startup-id feh --no-fehbg --bg-fill --no-xinerama /usr/share/backgrounds/greyscale_firewatch_dual_1440p.png
 exec --no-startup-id picom
 exec --no-startup-id dunst

@@ -18,12 +18,13 @@ some software that my dotfiles use:
 * i3status-rust
 * feh
 * picom
+* dunst
 
 AUR packages that I like to use
 * paru-bin
 * starship-bin
 
-to setup on a new install: clone to home directory, then run stow for each package to be used
+to setup on a new install: clone to something like /dotfiles, or if system configs don't matter, home directory, then run stow for each package to be used
 ```sh
 stow -t ~ user_bash user_zsh user_ETC
 ```
