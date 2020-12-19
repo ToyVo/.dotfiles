@@ -50,9 +50,6 @@ format = "{1m}"
 block = "sound"
 
 [[block]]
-block = "backlight"
-
-[[block]]
 block = "networkmanager"
 
 [[block]]
