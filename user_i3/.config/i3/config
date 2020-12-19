@@ -176,6 +176,10 @@
     for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable
     for_window [title="^Steam Keyboard$"] floating enable
 
+    # Assign windows to workspaces use xprop to find class
+    assign [class="^Steam$"] $ws10
+    assign [class="Zenity"] $ws10
+
     # colors (base16 solarized)
         set $base00 #263238
         set $base01 #2E3C43
