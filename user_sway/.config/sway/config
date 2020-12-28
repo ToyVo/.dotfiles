@@ -16,7 +16,7 @@ set $right l
 # Your preferred terminal emulator
 set $term alacritty
 # Your preferred application launcher
-set $menu rofi -show drun
+set $menu wofi --show drun
 # colors (base16 solarized)
 set $base00 #263238
 set $base01 #2E3C43
