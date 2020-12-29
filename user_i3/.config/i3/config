@@ -59,8 +59,8 @@ client.background       $base07
 
 font pango:Fira Code 9
 
-new_window pixel 1
-new_float normal
+default_border pixel 1
+default_floating_border normal
 
 smart_gaps on
 smart_borders on
