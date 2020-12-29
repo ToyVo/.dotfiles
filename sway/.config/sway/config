@@ -53,7 +53,8 @@ set $exit_command "swaynag -t warning -m 'You pressed the exit shortcut. Do you 
 ### Output configuration
 #
 # wallpaper
-output * bg $HOME/.backgrounds/greyscale_firewatch_dual_1440p.png fill
+output DP-1 mode 2560x1440@74.971001Hz position 0,0 bg $HOME/.backgrounds/greyscale_firewatch_dual_1440p_left.png fill
+output DP-2 mode 2560x1440@74.971001Hz position 2560,0 bg $HOME/.backgrounds/greyscale_firewatch_dual_1440p_right.png fill
 #
 # Example configuration:
 #
