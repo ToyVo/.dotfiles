@@ -1,5 +1,0 @@
-configuration {
-	theme: "/home/toyvo/.config/rofi/themes_base16-material.rasi";
-	modi: "window,run,drun,ssh";
-	font: "Fira Code 9";
-}
