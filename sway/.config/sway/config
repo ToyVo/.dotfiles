@@ -17,23 +17,25 @@ set $right l
 set $term alacritty
 # Your preferred application launcher
 set $menu wofi --show drun
-# colors (base16 solarized)
-set $base00 #263238
-set $base01 #2E3C43
-set $base02 #314549
-set $base03 #546E7A
-set $base04 #B2CCD6
-set $base05 #EEFFFF
-set $base06 #EEFFFF
-set $base07 #FFFFFF
-set $base08 #F07178
-set $base09 #F78C6C
-set $base0A #FFCB6B
-set $base0B #C3E88D
-set $base0C #89DDFF
-set $base0D #82AAFF
-set $base0E #C792EA
-set $base0F #FF5370
+# colors
+set $foreground #fafafa
+set $background #212121
+set $black #424242
+set $red #e53935
+set $green #43a047
+set $yellow #fdd835
+set $blue #1e88e5
+set $magenta #8e24aa
+set $cyan #00acc1
+set $white #e0e0e0
+set $brblack #757575
+set $brred #ef5350
+set $brgreen #66bb6a
+set $bryellow #ffee58
+set $brblue #42a5f5
+set $brmagenta #ab47bc
+set $brcyan #26c6da
+set $brwhite #f5f5f5
 # Workspaces
 set $ws1 "1"
 set $ws2 "2"
@@ -227,18 +229,18 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 ### Window Configuration
-# Basic color configuration using the base16 colors for windows and borders.
-# Property Name         Border  BG      Text    Indicator Child Border
-client.focused          $base03 $base03 $base07 $base03 $base03
-client.focused_inactive $base03 $base03 $base07 $base03 $base03
-client.unfocused        $base00 $base00 $base05 $base00 $base00
-client.urgent           $base08 $base08 $base00 $base08 $base08
-client.placeholder      $base00 $base00 $base05 $base00 $base00
-client.background       $base07
+# Basic color configuration for windows and borders.
+# Property Name         Border   BG       Text     Indicator Child Border
+client.focused          $brblack $brblack $brwhite $brblack  $brblack
+client.focused_inactive $brblack $brblack $brwhite $brblack  $brblack
+client.unfocused        $black   $black   $white   $black    $black
+client.urgent           $red     $red     $black   $red      $red
+client.placeholder      $black   $black   $white   $black    $black
+client.background       $brwhite
 # window font
 font pango:Fira Code 9
 # window borders
-default_border pixel 1
+default_border pixel 2
 default_floating_border normal
 # gaps
 smart_gaps on
@@ -250,22 +252,7 @@ gaps outer 2
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    position top
-    status_command i3status-rs
-    font pango:Fira Code, Font Awesome 5 Free 9
-
-    colors {
-        background $base00
-        separator  $base01
-        statusline $base04
-
-        # State             Border  BG      Text
-        focused_workspace   $base05 $base03 $base07
-        active_workspace    $base05 $base03 $base05
-        inactive_workspace  $base03 $base00 $base05
-        urgent_workspace    $base08 $base08 $base00
-        binding_mode        $base00 $base0A $base00
-    }
+    swaybar_command waybar
 }
 
 ### Autostart:

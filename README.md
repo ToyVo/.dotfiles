@@ -1,6 +1,6 @@
 # dotfiles
 
-basic dotfiles that I use, whereever possible I use the base16 material color scheme
+basic dotfiles that I use
 
 some software that my dotfiles use:
 * stow
@@ -15,24 +15,18 @@ some software that my dotfiles use:
 * zsh
 * materia-gtk-theme
 * sway
-* i3status-rust
+* waybar
 * polkit-gnome
 * pulseaudio
 * alsa-utils
 * brightnessctl
 * playerctl
 
-AUR packages that I like to use
+AUR packages that I depend on
 * paru-bin
 * starship-bin
 
 to setup on a new install: clone to something to home, then run stow for each package to be used
 ```sh
 stow -t ~ shell sway ETC
-```
-
-
-or for all
-```sh
-stow -t ~ */
 ```

@@ -1,0 +1,235 @@
+@define-color foreground #fafafa;
+@define-color background #212121;
+@define-color black #424242;
+@define-color red #e53935;
+@define-color green #43a047;
+@define-color yellow #fdd835;
+@define-color blue #1e88e5;
+@define-color magenta #8e24aa;
+@define-color cyan #00acc1;
+@define-color white #e0e0e0;
+@define-color brblack #757575;
+@define-color brred #ef5350;
+@define-color brgreen #66bb6a;
+@define-color bryellow #ffee58;
+@define-color brblue #42a5f5;
+@define-color brmagenta #ab47bc;
+@define-color brcyan #26c6da;
+@define-color brwhite #f5f5f5;
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Fira Code, Monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#mpd {
+    padding: 0 10px;
+    margin: 0 4px;
+    color: @foreground;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+window#waybar {
+    background-color: @black;
+    border-bottom: 3px solid @brblack;
+    color: @foreground;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: @foreground;
+}
+*/
+
+/* window#waybar.termite {
+    background-color: @magenta;
+}
+
+window#waybar.chromium {
+    background-color: @background;
+    border: none;
+} */
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: @foreground;
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button:hover {
+    background: @background;
+    box-shadow: inset 0 -3px @foreground;
+}
+
+#workspaces button.focused {
+    background-color: @brblack;
+    box-shadow: inset 0 -3px @foreground;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+}
+
+#mode {
+    background-color: @yellow;
+    color: @black;
+    border-bottom: 3px solid @foreground;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    background-color: @brblack;
+}
+
+#battery {
+    background-color: @foreground;
+    color: @background;
+}
+
+#battery.charging {
+    color: @foreground;
+    background-color: @green;
+}
+
+@keyframes blink {
+    to {
+        background-color: @foreground;
+        color: @background;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: @red;
+    color: @foreground;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: @background;
+}
+
+#cpu {
+    background-color: @cyan;
+}
+
+#memory {
+    background-color: @brcyan;
+}
+
+#backlight {
+    background-color: @bryellow;
+    color: @black;
+}
+
+#network {
+    background-color: @brmagenta;
+}
+
+#network.disconnected {
+    background-color: @magenta;
+}
+
+#pulseaudio {
+    background-color: @blue;
+}
+
+#pulseaudio.muted {
+    background-color: @background;
+}
+
+/* #custom-media {
+    background-color: @green;
+    color: @background;
+    min-width: 100px;
+}
+
+#custom-media.custom-spotify {
+    background-color: @brgreen;
+}
+
+#custom-media.custom-vlc {
+    background-color: @brred;
+} */
+
+#temperature {
+    background-color: @brblue;
+}
+
+#temperature.critical {
+    background-color: @red;
+}
+
+#tray {
+    background-color: @brblack;
+}
+
+#idle_inhibitor {
+    background-color: @background;
+}
+
+#idle_inhibitor.activated {
+    background-color: @brblue;
+    color: @background;
+}
+
+#mpd {
+    background-color: @green;
+    color: @black;
+}
+
+#mpd.disconnected {
+    background-color: @red;
+}
+
+#mpd.stopped {
+    background-color: @brred;
+}
+
+#mpd.paused {
+    background-color: @brgreen;
+}
+

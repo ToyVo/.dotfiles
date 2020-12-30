@@ -1,31 +1,38 @@
-/* base16-wofi (https://sr.ht/~knezi/base16-wofi)
- * Base16 wofi template by knezi
- * Material scheme by Nate Peterson */
-
 window {
-	background-color: #263238;
-	color: #EEFFFF;
+	background-color: #212121;
+	color: #fafafa;
+	border: 1px solid #424242;
+	border-radius: 16px;
+}
+
+#entry {
+	border-left: 1px solid #424242;
+	border-right: 1px solid #424242;
 }
 
 #entry:nth-child(odd) {
-	background-color: #263238;
+	background-color: #424242;
 }
 
 #entry:nth-child(even) {
-	background-color: #2E3C43;
+	background-color: #212121;
 }
 
 #entry:selected {
-	background-color: #314549;
+	background-color: #757575;
 }
 
 #input {
-	background-color: #2E3C43;
-	color: #B2CCD6;
-	border-color: #314549; 
+	background-color: #212121;
+	color: #e0e0e0;
+	border: 1px solid #424242;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
 }
 
 #input:focus {
-	border-color: #FFCB6B; 
+	border-color: #424242; 
 }
 
