@@ -16,7 +16,11 @@ some software that my dotfiles use:
 * materia-gtk-theme
 * sway
 * i3status-rust
-* dunst
+* polkit-gnome
+* pulseaudio
+* alsa-utils
+* brightnessctl
+* playerctl
 
 AUR packages that I like to use
 * paru-bin

@@ -57,25 +57,6 @@ output * bg $HOME/.backgrounds/greyscale_firewatch_dual_1440p.png fill
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
-# Basic color configuration using the base16 colors for windows and borders.
-# Property Name         Border  BG      Text    Indicator Child Border
-client.focused          $base03 $base03 $base07 $base03 $base03
-client.focused_inactive $base03 $base03 $base07 $base03 $base03
-client.unfocused        $base00 $base00 $base05 $base00 $base00
-client.urgent           $base08 $base08 $base00 $base08 $base08
-client.placeholder      $base00 $base00 $base05 $base00 $base00
-client.background       $base07
-
-font pango:Fira Code 9
-
-default_border pixel 1
-default_floating_border normal
-
-smart_gaps on
-smart_borders on
-gaps inner 8
-gaps outer 2
-
 ### Idle configuration
 #
 # Example configuration:
@@ -245,6 +226,25 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+### Window Configuration
+# Basic color configuration using the base16 colors for windows and borders.
+# Property Name         Border  BG      Text    Indicator Child Border
+client.focused          $base03 $base03 $base07 $base03 $base03
+client.focused_inactive $base03 $base03 $base07 $base03 $base03
+client.unfocused        $base00 $base00 $base05 $base00 $base00
+client.urgent           $base08 $base08 $base00 $base08 $base08
+client.placeholder      $base00 $base00 $base05 $base00 $base00
+client.background       $base07
+# window font
+font pango:Fira Code 9
+# window borders
+default_border pixel 1
+default_floating_border normal
+# gaps
+smart_gaps on
+smart_borders on
+gaps inner 8
+gaps outer 2
 #
 # Status Bar:
 #
@@ -267,5 +267,9 @@ bar {
         binding_mode        $base00 $base0A $base00
     }
 }
+
+### Autostart:
+#
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 include /etc/sway/config.d/*
