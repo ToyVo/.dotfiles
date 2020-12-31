@@ -1,2 +1,3 @@
 scaling=fill
-image=$HOME/.backgrounds/greyscale_firewatch_dual_1440p.png
+image=DP-1:$HOME/.backgrounds/greyscale_firewatch_dual_1440p_left.png
+image=DP-2:$HOME/.backgrounds/greyscale_firewatch_dual_1440p_right.png
