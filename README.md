@@ -16,11 +16,14 @@ some software that my dotfiles use:
 * materia-gtk-theme
 * sway
 * waybar
+* swayidle
+* swaylock
 * polkit-gnome
 * pulseaudio
 * alsa-utils
 * brightnessctl
 * playerctl
+* mako
 
 AUR packages that I depend on
 * paru-bin
