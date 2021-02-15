@@ -1,31 +1,31 @@
 window {
-	background-color: #212121;
-	color: #fafafa;
-	border: 1px solid #424242;
+	background-color: #191919;
+	color: #f7f7f2;
+	border: 1px solid #353535;
 	border-radius: 16px;
 }
 
 #entry {
-	border-left: 1px solid #424242;
-	border-right: 1px solid #424242;
+	border-left: 1px solid #353535;
+	border-right: 1px solid #353535;
 }
 
 #entry:nth-child(odd) {
-	background-color: #424242;
+	background-color: #353535;
 }
 
 #entry:nth-child(even) {
-	background-color: #212121;
+	background-color: #191919;
 }
 
 #entry:selected {
-	background-color: #757575;
+	background-color: #585858;
 }
 
 #input {
-	background-color: #212121;
-	color: #e0e0e0;
-	border: 1px solid #424242;
+	background-color: #191919;
+	color: #6c6c6c;
+	border: 1px solid #353535;
 	border-top-left-radius: 16px;
 	border-top-right-radius: 16px;
 	border-bottom-left-radius: 0;
@@ -33,6 +33,6 @@ window {
 }
 
 #input:focus {
-	border-color: #424242; 
+	border-color: #353535; 
 }
 

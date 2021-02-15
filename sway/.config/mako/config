@@ -1,17 +1,17 @@
 font=Fira Code 9
 border-radius=16
-text-color=#fafafaff
+text-color=#f7f7f2ff
 border-size=2
-border-color=#757575ff
-progress-color=over #1e88e5ff
+border-color=#585858ff
+progress-color=over #22afa2ff
 icon-path=/usr/share/icons/Papirus-Dark
 default-timeout=5000
 
 [urgency=low]
-background-color=#212121ff
+background-color=#191919ff
 
 [urgency=normal]
-background-color=#424242ff
+background-color=#353535ff
 
 [urgency=high]
-background-color=#e53935ff
+background-color=#aa0000ff
