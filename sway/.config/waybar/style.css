@@ -20,7 +20,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: Fira Code, Monospace;
+    font-family: "Fira Code", Monospace;
     font-size: 13px;
     min-height: 0;
 }
@@ -36,11 +36,11 @@
 #custom-media,
 #tray,
 #mode,
-#idle_inhibitor,
-#mpd {
+#idle_inhibitor {
     padding: 0 10px;
     margin: 0 4px;
     color: @foreground;
+    border-radius: 13px; 
 }
 
 #window,
@@ -181,20 +181,6 @@ label:focus {
     background-color: @background;
 }
 
-/* #custom-media {
-    background-color: @green;
-    color: @background;
-    min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-    background-color: @brgreen;
-}
-
-#custom-media.custom-vlc {
-    background-color: @brred;
-} */
-
 #temperature {
     background-color: @brblue;
 }
@@ -214,22 +200,5 @@ label:focus {
 #idle_inhibitor.activated {
     background-color: @brblue;
     color: @background;
-}
-
-#mpd {
-    background-color: @green;
-    color: @black;
-}
-
-#mpd.disconnected {
-    background-color: @red;
-}
-
-#mpd.stopped {
-    background-color: @brred;
-}
-
-#mpd.paused {
-    background-color: @brgreen;
 }
 

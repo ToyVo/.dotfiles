@@ -47,6 +47,8 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+# Exit command, used for $mod+Shift+e and XF86PowerOff
+set $exit_command "swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Exit sway' 'swaymsg exit' -b 'Poweroff' 'shutdown now' -b 'Restart' 'shutdown -r now' -b 'Lock' 'swaylock -f'"
 
 ### Output configuration
 #
@@ -101,7 +103,7 @@ input "type:keyboard" {
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec $exit_command
 #
 # Media Keys
 #
@@ -114,6 +116,7 @@ input "type:keyboard" {
     bindsym XF86AudioPlay exec playerctl play-pause
     bindsym XF86AudioNext exec playerctl next
     bindsym XF86AudioPrev exec playerctl previous
+    bindsym XF86PowerOff exec $exit_command
 #
 # Moving around:
 #
