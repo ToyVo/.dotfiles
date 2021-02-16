@@ -20,4 +20,4 @@ set termguicolors
 set scrolloff=8
 set signcolumn=yes
 set colorcolumn=120
-highlight ColorColumn ctermbg=0 guibg=lightgrey
+set completeopt=menuone,noinsert,noselect
