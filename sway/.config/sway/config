@@ -238,7 +238,7 @@ client.urgent           $red     $red     $black   $red      $red
 client.placeholder      $black   $black   $white   $black    $black
 client.background       $brwhite
 # window font
-font pango:Fira Code 9
+font pango:FiraCode Nerd Font Mono 9
 # window borders
 default_border pixel 2
 default_floating_border normal

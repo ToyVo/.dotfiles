@@ -2,16 +2,12 @@
 
 basic dotfiles that I use
 
-some software that my dotfiles use:
+some packages that my dotfiles use:
 * stow
 * alacritty
-* fish
 * neofetch
-* neovim
 * papirus-icon-theme
 * wofi
-* ttf-fira-code
-* ttf-font-awesome
 * zsh
 * materia-gtk-theme
 * sway
@@ -28,8 +24,14 @@ some software that my dotfiles use:
 AUR packages that I depend on
 * paru-bin
 * starship-bin
+* neovim-git
+* nerd-fonts-fira-code
 
-to setup on a new install: clone to something to home, then run stow for each package to be used
+Other software that are used
+* vim-plug
+  * neovim config is setup with typescript and typescript-language-server via nvim-lspconfig
+
+to setup on a new install: clone to somewhere like $HOME, then run stow for each package to be used
 ```sh
 stow -t ~ shell sway ETC
 ```
