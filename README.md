@@ -22,13 +22,14 @@ some packages that my dotfiles use:
 - brightnessctl
 - playerctl
 - mako
+- ttf-fira-code
+- ttf-font-awesome
 
 AUR packages that I depend on:
 
 - paru
 - starship
 - neovim-git
-- nerd-fonts-fira-code
 
 Other software that are used
 
