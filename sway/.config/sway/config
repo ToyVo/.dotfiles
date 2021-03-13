@@ -18,24 +18,24 @@ set $term alacritty
 # Your preferred application launcher
 set $menu wofi --show drun
 # colors
-set $foreground #f7f7f2
-set $background #191919
-set $black #353535
-set $red #aa0000
-set $green #c7da11
-set $yellow #eb8b00
-set $blue #dc7f75
-set $magenta #ca33a9
-set $cyan #22afa2
-set $white #6c6c6c
-set $brblack #585858
-set $brred #b41f1f
-set $brgreen #cede2e
-set $bryellow #ed991f
-set $brblue #e08f86
-set $brmagenta #d04cb3
-set $brcyan #3db9ad
-set $brwhite #b9b9b9
+set $foreground #ebdbb2
+set $background #282828
+set $black #282828
+set $red #cc241d
+set $green #98971a
+set $yellow #d79921
+set $blue #458588
+set $magenta #b16286
+set $cyan #689d6a
+set $white #a89984
+set $brblack #928374
+set $brred #fb4934
+set $brgreen #b8bb26
+set $bryellow #fabd2f
+set $brblue #83a598
+set $brmagenta #d3869b
+set $brcyan #8ec07c
+set $brwhite #ebdbb2
 # Workspaces
 set $ws1 "1"
 set $ws2 "2"

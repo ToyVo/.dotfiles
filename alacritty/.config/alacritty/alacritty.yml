@@ -176,8 +176,8 @@ draw_bold_text_with_bright_colors: false
 colors:
   # Default colors
   primary:
-    background: '#191919'
-    foreground: '#f7f7f2'
+    background: '#282828'
+    foreground: '#ebdbb2'
 
     # Bright and dim foreground colors
     #
@@ -185,8 +185,8 @@ colors:
     # present. If the bright foreground color is not set, or
     # `draw_bold_text_with_bright_colors` is `false`, the normal foreground
     # color will be used.
-    #dim_foreground: '#828482'
-    #bright_foreground: '#eaeaea'
+    dim_foreground: '#d5c4a1'
+    bright_foreground: '#fbf1c7'
 
   # Cursor colors
   #
@@ -194,9 +194,9 @@ colors:
   #
   # Allowed values are CellForeground and CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
-  #cursor:
-  #  text: CellBackground
-  #  cursor: CellForeground
+  cursor:
+    text: CellBackground
+    cursor: CellForeground
 
   # Vi mode cursor colors
   #
@@ -204,9 +204,9 @@ colors:
   #
   # Allowed values are CellForeground and CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
-  #vi_mode_cursor:
-  #  text: CellBackground
-  #  cursor: CellForeground
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
 
   # Selection colors
   #
@@ -214,9 +214,9 @@ colors:
   #
   # Allowed values are CellForeground and CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
-  #selection:
-  #  text: CellBackground
-  #  background: CellForeground
+  selection:
+    text: CellBackground
+    background: CellForeground
 
   # Search colors
   #
@@ -237,39 +237,39 @@ colors:
 
   # Normal colors
   normal:
-    black:   "#353535"
-    red:     "#aa0000"
-    green:   "#c7da11"
-    yellow:  "#eb8b00"
-    blue:    "#dc7f75"
-    magenta: "#ca33a9"
-    cyan:    "#22afa2"
-    white:   "#6c6c6c"
+    black:   "#282828"
+    red:     "#cc241d"
+    green:   "#98971a"
+    yellow:  "#d79921"
+    blue:    "#458588"
+    magenta: "#b16286"
+    cyan:    "#689d6a"
+    white:   "#a89984"
 
   # Bright colors
   bright:
-    black:   "#585858"
-    red:     "#b41f1f"
-    green:   "#cede2e"
-    yellow:  "#ed991f"
-    blue:    "#e08f86"
-    magenta: "#d04cb3"
-    cyan:    "#3db9ad"
-    white:   "#b9b9b9"
+    black:   "#928374"
+    red:     "#fb4934"
+    green:   "#b8bb26"
+    yellow:  "#fabd2f"
+    blue:    "#83a598"
+    magenta: "#d3869b"
+    cyan:    "#8ec07c"
+    white:   "#ebdbb2"
 
   # Dim colors
   #
   # If the dim colors are not set, they will be calculated automatically based
   # on the `normal` colors.
-  #dim:
-  #  black:   '#131415'
-  #  red:     '#864343'
-  #  green:   '#777c44'
-  #  yellow:  '#9e824c'
-  #  blue:    '#556a7d'
-  #  magenta: '#75617b'
-  #  cyan:    '#5b7d78'
-  #  white:   '#828482'
+  dim:
+    black:   '#3c3836'
+    red:     '#9d0006'
+    green:   '#79740e'
+    yellow:  '#b57614'
+    blue:    '#076678'
+    magenta: '#8f3f71'
+    cyan:    '#427b58'
+    white:   '#928374'
 
   # Indexed Colors
   #

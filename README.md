@@ -10,7 +10,6 @@ some packages that my dotfiles use:
 - papirus-icon-theme
 - wofi
 - zsh
-- materia-gtk-theme
 - sway
 - waybar
 - swayidle
@@ -30,6 +29,7 @@ AUR packages that I depend on:
 - paru
 - starship
 - neovim-git
+- gruvbox-dark-gtk
 
 Other software that are used
 
