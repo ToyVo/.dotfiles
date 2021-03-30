@@ -1,0 +1,20 @@
+set visualbell
+set noerrorbells
+set ignorecase
+set smartcase
+set nohlsearch
+set incsearch
+set relativenumber
+set number
+set scrolloff=8
+set showmode
+
+let mapleader = " "
+
+set highlightedyank
+
+nnoremap Y y$
+imap <C-v> <Esc><Action>($Paste)i
+vmap <C-c> <Action>($Copy)<Esc>
+nmap <leader>/ <Action>(Find)
+nmap <C-w>q <Action>(CloseContent)
